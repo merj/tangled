@@ -1,0 +1,29 @@
+tangled
+
+Connect anything to anything:
+
+file
+exec
+tcp
+tls+tcp
+unix
+http
+https
+ws
+wss
+
+GETTING STARTED
+
+$ ./tangled exec://$(which date) ws://localhost:8000 &
+[1] 1234
+$ ./tangle ws://localhost:8000
+Thu Oct 14 19:05:53 CEST 2021
+$ 
+
+REQUIREMENTS
+
+go 1.16
+
+LICENSE
+
+ISC-style license
